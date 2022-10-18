@@ -1,0 +1,44 @@
+@use '../custom' as *;
+@use '../components/mixin' as *;
+
+
+
+.btn-rounded {
+    // If you want the number icon not to show on small devices, you will enter this command below. if you don't want it not to show on big devices, you change the sm to lg 
+   @include media-breakpoint-down(sm) {
+        display: none;
+    }
+    position: relative;
+    font-weight: 600;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 2.8rem;
+    padding-left: 1rem;
+    margin: 0;
+    border: 0.1rem solid rgb(129, 13, 13);
+    background-color: beige;
+
+    span {
+        position: absolute;
+        background-color: rgb(156, 79, 156);
+        width: 2rem;
+        height: 2rem;
+        top: 50%;
+        right: 9px;
+        transform: translateY(-50%);
+        border-radius: 50%;
+
+        i{
+            color: beige;
+            transform: translateY(20%);
+        }
+    }
+    &:hover{
+        @include gradient;
+        color: aliceblue;
+
+        span{
+            background-color: rgb(46, 2, 28);
+        }
+    }
+}

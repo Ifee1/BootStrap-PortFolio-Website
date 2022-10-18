@@ -1,0 +1,32 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "bootstrap and sass",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "Bootstrap",
+    "sass",
+    "learn-bootstrap",
+    "learn-sass",
+    "bootstrap"
+  ],
+  "author": "Ifee",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.54.9"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "autoprefixer": "^10.4.11",
+    "bootstrap": "^5.2.1",
+    "glightbox": "^3.2.0",
+    "jquery": "^3.6.1",
+    "popper.js": "^1.16.1",
+    "postcss-cli": "^10.0.0"
+  }
+}

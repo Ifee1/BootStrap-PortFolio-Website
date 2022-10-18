@@ -1,0 +1,26 @@
+@use '../custom' as *;
+@use '../components/mixin' as *;
+
+.navbar-image{
+    margin-left: 7rem;
+}
+
+.menu{
+   @include gradient;
+
+
+li{
+    padding: 0 0.7rem;
+    
+    a{
+        color: aliceblue !important;
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+}
+
+.dropdown{
+    position: relative;
+}
+
+}
